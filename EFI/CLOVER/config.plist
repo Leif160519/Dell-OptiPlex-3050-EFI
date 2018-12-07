@@ -14,20 +14,6 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>change _OSI to XOSI</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					X09TSQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WE9TSQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change EHC1 to EH01</string>
 					<key>Disabled</key>
 					<false/>
@@ -56,58 +42,16 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change HDAS to HDEF</string>
+					<string>change XHCI to XHC</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					SERBUw==
+					WEhDSQ==
 					</data>
 					<key>Replace</key>
 					<data>
-					SERFRg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change HECI to IMEI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					SEVDSQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					SU1FSQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change MEI to IMEI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					TUVJXw==
-					</data>
-					<key>Replace</key>
-					<data>
-					SU1FSQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change GFX0 to IGPU</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					R0ZYMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					SUdQVQ==
+					WEhDXw==
 					</data>
 				</dict>
 			</array>
@@ -153,7 +97,7 @@
 		<key>DefaultLoader</key>
 		<string>bootmgfw.efi</string>
 		<key>DefaultVolume</key>
-		<string>ESP</string>
+		<string>Macintosh HD</string>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>Secure</key>
@@ -191,8 +135,10 @@
 		</array>
 		<key>Audio</key>
 		<dict>
+			<key>AFGLowPowerState</key>
+			<false/>
 			<key>Inject</key>
-			<integer>13</integer>
+			<string>No</string>
 			<key>ResetHDA</key>
 			<false/>
 		</dict>
@@ -219,11 +165,10 @@
 	<dict>
 		<key>Hide</key>
 		<array>
-			<string>BOOTX64.EFI</string>
+			<string>Preboot</string>
 			<string>Windows</string>
+			<string>BOOTX64.EFI</string>
 		</array>
-		<key>Language</key>
-		<string>zh_CN:0</string>
 		<key>Mouse</key>
 		<dict>
 			<key>DoubleClick</key>
@@ -244,7 +189,7 @@
 			<key>Linux</key>
 			<false/>
 			<key>Tool</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
@@ -322,26 +267,6 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>USB 10.13.4+ by PMHeart</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				g32UDw+DlwQAAA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>
-				g32UD5CQkJCQkA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Boot graphics glitch, 10.13 beta (based on denskop patch)</string>
 				<key>Disabled</key>
 				<false/>
@@ -358,24 +283,6 @@
 				<key>Replace</key>
 				<data>
 				AQAA6yI=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB Port Limit Patch</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				g32MEA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleUSBXHCIPCI</string>
-				<key>Replace</key>
-				<data>
-				g32MGQ==
 				</data>
 			</dict>
 			<dict>
@@ -454,20 +361,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>0x59120000 VRAM Patch by FB-Patcher (credit headkaze)</string>
+				<string>USB Port 15-&gt;26</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				AAMDAwAAYAIAAAAAAAAAYA==
+				g32IDw+DpwQ=
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
 				<key>Name</key>
-				<string>com.apple.driver.AppleIntelFramebufferAzul</string>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>
-				AAMDAwAAYAIAAAAAAAAAgA==
+				g32IGg+DpwQ=
 				</data>
 			</dict>
 		</array>
@@ -492,7 +401,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02705108GUH69FA8</string>
+		<string>C027251304NH69FAD</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -522,16 +431,16 @@
 		<key>ProductName</key>
 		<string>iMac18,1</string>
 		<key>SerialNumber</key>
-		<string>C02T6NZLH7JY</string>
+		<string>C02TWGYEH7JY</string>
 		<key>SmUUID</key>
-		<string>565B2400-C5F0-4542-8A06-3B9C133161B3</string>
+		<string>9F0EC1F8-CCA0-4800-899B-FC097F9CFA6B</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>565B2400-C5F0-4542-8A06-3B9C133161B3</string>
+		<string>9F0EC1F8-CCA0-4800-899B-FC097F9CFA6B</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 		<key>InjectSystemID</key>
