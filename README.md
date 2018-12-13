@@ -10,6 +10,9 @@
 ![](/Images/Graphics.png)
 ![](/Images/SMBIOS.png)
 
+### 5.处理器变频
+处理器变频安装完系统之后自动实现变频功能，不需要在 *`config.plist`* 中设置其他参数了
+
 # 效果图
 ### 1.系统信息
 ![](/Images/系统信息.png)
