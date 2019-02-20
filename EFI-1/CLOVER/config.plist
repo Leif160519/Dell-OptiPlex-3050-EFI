@@ -89,7 +89,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 -disablegfxfirmware</string>
+		<string>dart=0</string>
 		<key>Debug</key>
 		<false/>
 		<key>Default Loader</key>
@@ -169,6 +169,8 @@
 			<string>Windows</string>
 			<string>BOOTX64.EFI</string>
 		</array>
+		<key>Language</key>
+		<string>en:0</string>
 		<key>Mouse</key>
 		<dict>
 			<key>DoubleClick</key>
@@ -192,7 +194,7 @@
 			<true/>
 		</dict>
 		<key>ScreenResolution</key>
-		<string>1920x1080</string>
+		<string>2560x440</string>
 		<key>Theme</key>
 		<string>bootcamp</string>
 	</dict>

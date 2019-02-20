@@ -16,7 +16,7 @@
 ![](/Images/SMBIOS.png)
 
 #### 方法二
-(EFI-2)显卡驱动只通过whateverGreen.kext驱动进行自动检测，配合FB-Patcher(现改名Hackintool)给显卡打补丁即可
+(EFI-2)显卡驱动只通过whateverGreen.kext驱动进行自动检测，配合FB-Patcher(现改名Hackintool)给显卡打补丁(点击Generate Patch，之后导出覆盖原先的config.plist文件)即可
 ![](/Images/驱动列表2.png)
 ![](/Images/General.png)
 ![](/Images/Patch-General.png)
@@ -35,7 +35,9 @@
 # 效果图
 ### 1.系统信息
 ![](/Images/系统信息.png)
+> 显存1536MB(EFI-1)
 ![](/Images/系统信息2.png)
+> 显存2048MB(EFI-2)
 
 ### 2.显示器
 ![](/Images/显示器.png)
