@@ -16,12 +16,13 @@
 ![](/Images/SMBIOS.png)
 
 #### 方法二
-(EFI-2)显卡驱动只通过whateverGreen.kext驱动进行自动检测，配合FB-Patcher(现改名Hackintool)给显卡打补丁(点击Generate Patch，之后导出覆盖原先的config.plist文件)即可
+(EFI-2)显卡驱动只通过whateverGreen.kext驱动进行自动检测，配合FB-Patcher(现改名Hackintool)给显卡打补丁即可
 ![](/Images/驱动列表2.png)
 ![](/Images/General.png)
 ![](/Images/Patch-General.png)
 ![](/Images/Patch-Advanced.png)
 > 注意：kext文件夹里有关显卡驱动必须全部删除，仅留下whatevergreen.kext驱动即可，另外clover中有关显卡补丁也全部删除
+> FB打补丁点击Generate Patch，之后导出覆盖原先的config.plist文件即可
 
 ### 5.处理器变频
 处理器变频安装完系统之后自动实现变频功能，不需要在 *`config.plist`* 中设置其他参数了
@@ -36,6 +37,7 @@
 ### 1.系统信息
 ![](/Images/系统信息.png)
 > 显存1536MB(EFI-1)
+> 
 ![](/Images/系统信息2.png)
 > 显存2048MB(EFI-2)
 
